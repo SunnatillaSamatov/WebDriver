@@ -17,8 +17,6 @@ public class MailruTest {
         System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Selenium Driver\\chromedriver_win32\\chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.get("https://www.mail.ru");
-        webDriver.findElement(By.xpath("//button[@class='ph-login svelte-1hiqrvn']")).click();
-        webDriver.switchTo().frame(webDriver.findElement(By.cssSelector("iframe.ag-popup__frame__layout__iframe")));
         webDriver.manage().window().maximize();
 
 
